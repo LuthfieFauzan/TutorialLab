@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="547dp"
+        android:layout_height="0dp"
+        android:background="#3F51B5"
+        android:text="AplikasiKontrolUI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+
+        android:layout_width="462dp"
+
+        android:layout_height="727dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="41dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Tutorials point"
+            android:textColor="#ff87ff09"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/buttons2"
+            android:checked="true"
+            android:text="On" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/toggleButton"
+            android:checked="true"
+            android:text="Off" />
+        <Button
+            android:id="@+id/buttons2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="ClickMe" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

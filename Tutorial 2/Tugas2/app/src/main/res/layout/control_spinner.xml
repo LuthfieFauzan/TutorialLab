@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="499dp"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        android:text="AplikasiKontrolUI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        tools:layout_editor_absoluteX="-25dp"
+        tools:layout_editor_absoluteY="148dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:text="Category:" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

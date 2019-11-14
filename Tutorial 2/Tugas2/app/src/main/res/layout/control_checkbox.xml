@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="547dp"
+        android:layout_height="0dp"
+        android:background="#3F51B5"
+        android:text="AplikasiKontrolUI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="528dp"
+        android:layout_height="722dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="-19dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Example of checkbox"
+            android:textSize="30dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:text="Do you like Android Programming?" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkBox1"
+            android:layout_alignStart="@+id/checkBox1"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:checked="false"
+            android:text="Do you like Java Programming? " />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:layout_alignEnd="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="39dp"
+            android:text="CBD Class PNJ"
+            android:textColor="#ff87ff09"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkBox1"
+            android:layout_alignLeft="@+id/checkBox1"
+            android:layout_alignParentBottom="true"
+            android:text="Ok" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:text="Cancel" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

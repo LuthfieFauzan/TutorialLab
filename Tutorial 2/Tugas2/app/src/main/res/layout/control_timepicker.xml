@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="547dp"
+        android:layout_height="0dp"
+        android:background="#3F51B5"
+        android:text="AplikasiKontrolUI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="542dp"
+        android:layout_height="659dp"
+
+        tools:layout_editor_absoluteY="32dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/time_pick"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            android:onClick="setTime"
+            android:text="@string/time_save" />
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/set_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timePicker1"
+            android:layout_alignTop="@+id/set_button"
+            android:layout_marginTop="67dp"
+            android:text="@string/time_current"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/time_selected"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
