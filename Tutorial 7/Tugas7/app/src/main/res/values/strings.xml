@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tugas 7</string>
+    <string name="enter_nama">Luthfie Fauzan</string>
+    <string name="enter_kelas">3SC6</string>
+    <string name="add_record">Insert</string>
+    <string name="empty_list_text"></string>
+</resources>
